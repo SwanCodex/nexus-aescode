@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Model artifacts (do not commit trained weights)
+models/**/*.pt
+models/**/*.pth
+models/**/*.ckpt
+models/**/*.json
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.npy
+models/**/*.npz
+models/**/checkpoints/
+
+# Oversized data files (GitHub >100MB)
+data/features/features.csv
+data/splits/train_fold_*.csv
+data/splits/train_temporal.csv
+
+# Generated outputs
+outputs/
+notebooks/lightning_logs/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
